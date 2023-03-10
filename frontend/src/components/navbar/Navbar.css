@@ -13,8 +13,7 @@ body {
   color: #fcd24f;
 }
 
-.items,
-.small-items {
+.items {
   list-style-type: none;
   text-decoration: none;
   font-size: 20px;
@@ -24,6 +23,10 @@ body {
   text-transform: uppercase;
   margin-right: 30px;
   cursor: pointer;
+}
+
+.stylemasknav {
+  width: 50px;
 }
 
 .logo-navbar {
@@ -81,10 +84,9 @@ nav {
   margin: 30px; */
 }
 
-.menu li {
+/* .menu li {
   float: left;
-  width: 100%;
-}
+} */
 
 .menu li:link,
 .menu li:visited {
@@ -138,7 +140,7 @@ nav {
   background-color: #808080;
 }
 
-.menu .sousmenu li:hover {
+.menu .sousmenu li a:hover {
   background-color: #199bd2;
   cursor: pointer;
 }
@@ -146,6 +148,13 @@ nav {
 .menu li:hover .sousmenu {
   display: block;
 }
+
+/* NavBar Sous menu Masque*/
+.maskhumeurs {
+  width: 50px;
+}
+
+/* NavBar Sous menu Masque*/
 
 @media screen and (max-width: 940px) {
   header {
@@ -164,7 +173,7 @@ nav {
   }
 
   nav {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -186,18 +195,37 @@ nav {
   }
 
   .items {
-    margin: 35px 0;
+    margin: 60px 0;
+    /* margin: 35% 0; */
     text-align: center;
     text-shadow: 1px 1px 1px #fcd24f, 0 0 black;
+
+    /* padding-right: -5%; */
   }
 
-  .menu .sousmenu {
-    bottom: 120px;
-    left: 140px;
+  .menu .sousmenu-humeurs {
+    /* bottom: 120px;
+    left: 140px; */
+    left: 0px;
+
+    top: 100px;
     width: 115px;
     font-size: 14px;
-
     border-radius: 0 5px 5px 0;
+
+    /* position: absolute; */
+  }
+
+  .menu .sousmenu-wish {
+    /* bottom: 120px; */
+    /* left: 100px; */
+    bottom: 330px;
+    width: 115px;
+    font-size: 14px;
+    border-radius: 0 5px 5px 0;
+
+    position: fixed;
+    /* position: absolute; */
   }
 
   .logo-title {
