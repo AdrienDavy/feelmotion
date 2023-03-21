@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
@@ -47,10 +48,9 @@ function PlateformChoice({ setProviderChoice, providerChoice }) {
       {myPlateformArray.map((item) => (
         <button
           onClick={() => handleClick(item)}
-          className={`button-plateform ${
-            providerChoice === item.provider_id ? "selected" : ""
-          }`}
-          key={item.id}
+          className={`button-plateform ${providerChoice === item.provider_id ? "selected" : ""
+            }`}
+          key={item.provider_id}
         >
           {item.provider_name}
         </button>

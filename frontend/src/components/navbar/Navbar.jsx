@@ -70,20 +70,19 @@ function Navbar({
             <li className="items">accueil</li>
             <li>
               <ul className="menu">
-                <li>
-                  <li className="items">{maskChoice ? "" : "Humeurs"} </li>
-
-                  <img className="maskhumeurs" src={maskChoice} alt="" />
-                  <ul className="sousmenu-humeurs sousmenu">
-                    {Page2Array.map((item) => (
-                      <MaskNav
-                        setMaskChoice={setMaskChoice}
-                        key={item.id}
-                        item={item}
-                      />
-                    ))}
-                  </ul>
+                <li className={maskChoice ? "item-mask" : "items-humeurs"}>
+                  {maskChoice ? "" : "Humeurs"}
                 </li>
+                <img className="maskhumeurs" src={maskChoice} alt="" />
+                <ul className="sousmenu-humeurs sousmenu">
+                  {Page2Array.map((item) => (
+                    <MaskNav
+                      setMaskChoice={setMaskChoice}
+                      key={item.id}
+                      item={item}
+                    />
+                  ))}
+                </ul>
               </ul>
             </li>
             <li>

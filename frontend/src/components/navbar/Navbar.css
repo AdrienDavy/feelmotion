@@ -13,7 +13,7 @@ body {
   color: #fcd24f;
 }
 
-.items {
+.items, .items-humeurs {
   list-style-type: none;
   text-decoration: none;
   font-size: 20px;
@@ -23,6 +23,14 @@ body {
   text-transform: uppercase;
   margin-right: 30px;
   cursor: pointer;
+}
+
+.items-humeurs{
+  margin-right: -10px;
+}
+
+.item-mask{
+  margin-right: 30px;
 }
 
 .stylemasknav {
@@ -84,9 +92,9 @@ nav {
   margin: 30px; */
 }
 
-/* .menu li {
+.menu li {
   float: left;
-} */
+}
 
 .menu li:link,
 .menu li:visited {
@@ -149,6 +157,11 @@ nav {
   display: block;
 }
 
+ul.menu .items .Humeurs {
+  margin: auto;
+  margin-right: 200px;
+}
+
 /* NavBar Sous menu Masque*/
 .maskhumeurs {
   width: 50px;
@@ -202,7 +215,7 @@ nav {
 
     /* padding-right: -5%; */
   }
-
+ 
   .menu .sousmenu-humeurs {
     /* bottom: 120px;
     left: 140px; */
@@ -219,7 +232,7 @@ nav {
   .menu .sousmenu-wish {
     /* bottom: 120px; */
     /* left: 100px; */
-    bottom: 330px;
+    bottom: 290px;
     width: 115px;
     font-size: 14px;
     border-radius: 0 5px 5px 0;
