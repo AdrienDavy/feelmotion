@@ -217,16 +217,20 @@ ul.menu .items .Humeurs {
   }
  
   .menu .sousmenu-humeurs {
-    /* bottom: 120px;
-    left: 140px; */
+   
     left: 0px;
-
     top: 100px;
     width: 115px;
     font-size: 14px;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;    
+  }
 
-    /* position: absolute; */
+  .items-humeurs{
+    margin-right: -50px;
+  }
+
+  .item-mask{
+    margin-right: 0px;
   }
 
   .menu .sousmenu-wish {
@@ -265,7 +269,7 @@ ul.menu .items .Humeurs {
   }
 
   .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.75em, 1.5em);
     transition: ease-out 0.5s;
   }
 
@@ -275,7 +279,7 @@ ul.menu .items .Humeurs {
   }
 
   .burger-bar.clicked:nth-child(3) {
-    transform: rotate(135deg) translate(-0.75em, 1.22em);
+    transform: rotate(135deg) translate(-0.75em, 1.5em);
     transition: ease-out 0.5s;
   }
 
