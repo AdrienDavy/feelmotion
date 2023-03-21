@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import "./Navbar.css";
 // eslint-disable-next-line import/no-extraneous-dependencies
+import { Link } from "react-router-dom";
 import logo from "../../assets/Logo_FeelMotion_sans_texte.png";
 import wishesArray from "../envie/Wishes";
 import WishNav from "../envie/WishNav";
@@ -67,7 +68,9 @@ function Navbar({
             <p className="logo-title">feel motion</p>
           </div>
           <ul className="list-items">
-            <li className="items">accueil</li>
+            <Link to="/">
+              <li className="items">accueil</li>
+            </Link>
             <li>
               <ul className="menu">
                 <li className={maskChoice ? "item-mask" : "items-humeurs"}>
